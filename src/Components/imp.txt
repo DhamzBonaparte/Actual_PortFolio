@@ -1,3 +1,0 @@
-service id=service_6uev27b
-template id=template_a74royl
-public key=iyTqG-xjue5-WpDuA
