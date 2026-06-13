@@ -29,19 +29,13 @@ const projectData = [
     ],
     image: futhub,
     github: "https://github.com/DhamzBonaparte/FutHub",
-    live: null,
+    live: "https://futhub.netlify.app/",
   },
   {
     title: "Expense Tracker",
     description:
       "A sleek, full-stack application built to help users manage their daily finances effortlessly. It features intuitive expense categorization, real-time balance updates, and insightful visual summaries for income and spending trends. Designed for clarity, accuracy, and smooth user experience.",
-    tech: [
-      "JavaScript",
-      "React",
-      "SCSS",
-      "Material UI",
-      "HTML",
-    ],
+    tech: ["JavaScript", "React", "SCSS", "Material UI", "HTML"],
     image: expenseTracker,
     github: "https://github.com/DhamzBonaparte/Expense-tracker",
     live: "https://track-expense-now.netlify.app/",
