@@ -9,6 +9,8 @@ import expenseTracker from "../assets/exp-track.png";
 // Import image correctly
 import futhub from "../assets/futhub.png";
 import ttt from "../assets/ttt.png";
+import titanic from "../assets/titanic_vert.png";
+import aakarshan from "../assets/aakarshan.png";
 
 const projectData = [
   {
@@ -31,6 +33,35 @@ const projectData = [
     github: "https://github.com/DhamzBonaparte/FutHub",
     live: "https://futhub.netlify.app/",
   },
+  {
+    title: "Titanic Survival Predictor",
+    description:
+      "A machine learning project built on the Titanic dataset. It combines exploratory data analysis, visualizations, and a logistic regression model to predict passenger survival. Includes saved plots, profiling reports, and a clean pipeline for reproducible results.",
+    tech: ["Python", "Pandas", "Seaborn", "Matplotlib", "Scikit-learn"],
+    image: titanic,
+    github: "https://github.com/DhamzBonaparte/Titanic-EDA-ML",
+    live: null,
+    isfeatured: false,
+  },
+  {
+    title: "Aakarshan – Canvas Store",
+    description:
+      "A full‑stack online platform for selling custom canvas art and paintings. It features a modern storefront, secure payments, and a powerful admin panel for managing products, orders, and customer uploads. Designed to help artists and businesses showcase their work with clarity and scalability.",
+    tech: [
+      "JavaScript",
+      "React",
+      "SCSS",
+      "Material UI",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+    ],
+    image: aakarshan,
+    github: "https://github.com/DhamzBonaparte/Aakarshan",
+    live: "",
+    isfeatured: true,
+  },
+
   {
     title: "Expense Tracker",
     description:
@@ -66,16 +97,6 @@ const projectData = [
     tech: ["REACT", "HTML", "SCSS"],
     image: multiple,
     github: "https://github.com/DhamzBonaparte/Multiple-Projects",
-    live: null,
-  },
-
-  {
-    title: "Tic Tac Toe",
-    description:
-      "A classic two-player game built with HTML, CSS, and JavaScript. Features dynamic win detection, responsive design, and a clean user interface for an engaging experience.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    image: ttt,
-    github: "https://github.com/DhamzBonaparte/Tic-Tac-Toe",
     live: null,
   },
 ];
