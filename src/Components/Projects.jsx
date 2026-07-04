@@ -58,7 +58,7 @@ const projectData = [
     ],
     image: aakarshan,
     github: "https://github.com/DhamzBonaparte/Aakarshan",
-    live: "",
+    live: "https://aakarshann.netlify.app/",
     isfeatured: true,
   },
 
