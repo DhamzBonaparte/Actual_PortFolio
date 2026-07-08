@@ -11,6 +11,7 @@ import futhub from "../assets/futhub.png";
 import ttt from "../assets/ttt.png";
 import titanic from "../assets/titanic_vert.png";
 import aakarshan from "../assets/aakarshan.png";
+import worldcup from "../assets/worldcup.png";
 
 const projectData = [
   {
@@ -61,11 +62,27 @@ const projectData = [
     live: "https://aakarshann.netlify.app/",
     isfeatured: true,
   },
-
+  {
+    title: "FIFA World Cup Dataset",
+    description:
+      "Comprehensive dataset covering FIFA World Cup statistics from 1930 onwards, including matches, goals, attendance, and team performance. Built for analysis, visualization, and predictive modeling.",
+    tech: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "Scikit-learn",
+    ],
+    image: worldcup,
+    kaggle:
+      "https://www.kaggle.com/datasets/sulavdhami/worldcup-matches-1930-2022",
+    isfeatured: true,
+  },
   {
     title: "Expense Tracker",
     description:
-      "A sleek, full-stack application built to help users manage their daily finances effortlessly. It features intuitive expense categorization, real-time balance updates, and insightful visual summaries for income and spending trends. Designed for clarity, accuracy, and smooth user experience.",
+      "A sleek application built to help users manage their daily finances effortlessly. It features intuitive expense categorization, real-time balance updates and spending trends. Designed for clarity, accuracy, and smooth user experience.",
     tech: ["JavaScript", "React", "SCSS", "Material UI", "HTML"],
     image: expenseTracker,
     github: "https://github.com/DhamzBonaparte/Expense-tracker",
@@ -90,14 +107,6 @@ const projectData = [
     github: "https://github.com/DhamzBonaparte/Receipe-app",
     live: "https://find-receipe.netlify.app/",
     isFeatured: true,
-  },
-  {
-    title: "Multiple Projects",
-    description: "A collection of small projects which does many functions.",
-    tech: ["REACT", "HTML", "SCSS"],
-    image: multiple,
-    github: "https://github.com/DhamzBonaparte/Multiple-Projects",
-    live: null,
   },
 ];
 
@@ -140,12 +149,13 @@ const Projects = ({ refe }) => {
 
                 <div className="card-footer">
                   <a
-                    href={project.github}
+                    href={(project.github && project.github) || project.kaggle}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="action-link"
                   >
-                    GITHUB{" "}
+                    {project.github && <>GITHUB </>}
+                    {project.kaggle && <>KAGGLE </>}
                     <ArrowForwardIcon
                       style={{ fontSize: "1rem", marginLeft: "4px" }}
                     />
