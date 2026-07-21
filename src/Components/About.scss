@@ -4,7 +4,7 @@
 }
 
 .aboutt {
-    min-height: 80vh; // ensures enough space but grows with content
+    min-height: 90vh; // ensures enough space but grows with content
     margin-bottom: 9rem;
     background-color: rgb(5 5 5 / var(--tw-bg-opacity, 1));
 
@@ -211,6 +211,84 @@
             width: 100%;
             max-width: 600px;
             margin-bottom: 2rem;
+        }
+    }
+}
+
+.funfact {
+    background: #5c5c76;
+    // background: 0 2px 6px rgba(40, 40, 40, 0.08);
+    border-left: 6px solid #6c63ff;
+    padding: 1rem 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 6px;
+    // box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    box-shadow: #f9f9ff;
+
+}
+
+.funfact h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    color: #ced431;
+}
+
+.funfact p {
+    margin: 0;
+    color: white;
+    font-size: 1rem;
+}
+
+.funfact a {
+    color: #ecc32f;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.funfact a:hover {
+    text-decoration: underline;
+
+}
+
+@media (max-width: 768px) {
+    .funfact {
+        padding: 0.8rem 1rem;
+
+        h3 {
+            font-size: 1rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+/* 🔹 Mobile responsiveness */
+@media (max-width: 480px) {
+    .funfact {
+        border-left: none;
+        border-top: 3px solid #6c63ff;
+        text-align: center;
+        padding: 0.7rem 0.9rem;
+
+        h3 {
+            font-size: 0.95rem;
+        }
+
+        p {
+            font-size: 0.85rem;
+        }
+
+        a {
+            font-size: 0.85rem;
         }
     }
 }

@@ -53,6 +53,21 @@ export default function About({ refe }) {
               </div>
             </div>
           </div>
+          <div className="funfact">
+            <h3>✨ Fun Fact</h3>
+            <p>
+              My workflow project <em>Discord Invoice Replier</em> built with
+              n8n was recognized on LinkedIn by Jan Oberhauser, founder & CEO of
+              n8n, who liked my post.{" "}
+              <a
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7483701409515982849/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View the LinkedIn post
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </>
