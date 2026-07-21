@@ -221,9 +221,29 @@
     border-left: 6px solid #6c63ff;
     padding: 1rem 1.5rem;
     margin-top: 1.5rem;
+    font-family: var(--font-body);
     border-radius: 6px;
     // box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     box-shadow: #f9f9ff;
+
+    .highlight-n8n {
+        color: #e9598b; // official n8n red
+        font-weight: 600;
+    }
+
+    .highlight-founder {
+        background: #f9f9ff;
+        border-bottom: 2px solid #E0004D;
+        padding: 0 2px;
+        font-weight: 600;
+        color: #222;
+    }
+
+    .highlight-like {
+        color: #0cb3ef;
+        font-style: italic;
+        font-weight: 500;
+    }
 
 }
 
