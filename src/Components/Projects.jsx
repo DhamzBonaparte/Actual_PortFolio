@@ -15,7 +15,7 @@ import worldcup from "../assets/worldcup.png";
 
 const projectData = [
   {
-    title: "FutHub",
+    title: "FutHub - Futsal Booking Platform",
     description:
       "A professional, full-stack application designed to connect among futsal players and futsal owners. Features transparent admin workflows, booking logic, and user feedback.",
     tech: [

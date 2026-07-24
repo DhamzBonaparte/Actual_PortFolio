@@ -56,9 +56,12 @@ export default function About({ refe }) {
           <div className="funfact">
             <h3>✨ Fun Fact</h3>
             <p>
-              My workflow project <em>Discord Invoice Replier</em> built with{" "}
-              <span className="highlight-n8n">n8n</span> was recognized on
-              LinkedIn by{" "}
+              My workflow project{" "}
+              <em style={{ fontWeight: "bold", color: "#ff7f50" }}>
+                Discord Invoice Replier
+              </em>{" "}
+              built with <span className="highlight-n8n">n8n</span> was
+              recognized on LinkedIn by{" "}
               <span className="highlight-founder">
                 Jan Oberhauser, founder & CEO of n8n
               </span>
@@ -68,8 +71,12 @@ export default function About({ refe }) {
                 href="https://www.linkedin.com/feed/update/urn:li:activity:7483701409515982849/"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{
+                  marginTop: "5px",
+                  display: "inline-block",
+                }}
               >
-                View the LinkedIn post
+                Click to view the LinkedIn post
               </a>
             </p>
           </div>
