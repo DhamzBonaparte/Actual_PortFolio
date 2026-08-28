@@ -35,6 +35,17 @@ const Skills = ({ refe }) => {
         "Safe deletion/disapproval flows",
       ],
     },
+    {
+      category: "Machine Learning",
+      items: [
+        "Pandas & NumPy",
+        "Supervised & Unsupervised Learning",
+        "Regression & Classification Models",
+        "Scikit-learn",
+        "Data Preprocessing & Feature Engineering",
+        "Model Evaluation & Cross-validation",
+      ],
+    },
   ];
 
   return (

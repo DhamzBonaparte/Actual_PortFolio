@@ -57,11 +57,15 @@ export default function Hero({ refe, proRef, contRef }) {
             </div>
             
             <p className={`subtitle ${isVisible ? 'visible' : ''}`}>
-              A <strong>Full Stack Developer</strong> specializing in the{" "}
-              <strong className="mern-stack">MERN stack</strong> and{" "}
-              <strong className="python-stack">Python</strong>, creating efficient, 
-              scalable applications with modern design and robust functionality.
-            </p>
+  A <strong>Full Stack Developer</strong> specializing in the{" "}
+  <strong className="mern-stack">MERN stack</strong> and{" "}
+  <strong className="python-stack">Python</strong>, creating efficient, 
+  scalable applications with modern design and robust functionality. 
+  With added expertise in <strong className="ml-stack">Machine Learning</strong>, 
+  I build intelligent systems that leverage data-driven insights to enhance 
+  performance and deliver smarter solutions.
+</p>
+
             
             <div className={`button-container ${isVisible ? 'visible' : ''}`}>
               <button className="btn contact-btn" onClick={goToContacts}>
