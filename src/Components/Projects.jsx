@@ -12,6 +12,7 @@ import ttt from "../assets/ttt.png";
 import titanic from "../assets/titanic_vert.png";
 import aakarshan from "../assets/aakarshan.png";
 import worldcup from "../assets/worldcup.png";
+import mlAlgorithms from "../assets/ml-algorithms.png";
 
 const projectData = [
   {
@@ -35,14 +36,21 @@ const projectData = [
     live: "https://futhub.netlify.app/",
   },
   {
-    title: "Titanic Survival Predictor",
+    title: "ML-Algorithms Suite",
     description:
-      "A machine learning project built on the Titanic dataset. It combines exploratory data analysis, visualizations, and a logistic regression model to predict passenger survival. Includes saved plots, profiling reports, and a clean pipeline for reproducible results.",
-    tech: ["Python", "Pandas", "Seaborn", "Matplotlib", "Scikit-learn"],
-    image: titanic,
-    github: "https://github.com/DhamzBonaparte/Titanic-EDA-ML",
-    live: null,
-    isfeatured: false,
+      "A collection of machine learning implementations built from scratch to deepen understanding of core algorithms. Includes Linear Regression, Multiple Linear Regression, Gradient Descent (Batch, Stochastic, Mini-batch), and Ridge Regression. Designed with clear mathematical derivations, intuitive workflows, and hands-on coding to bridge theory with practice.",
+    tech: [
+      "Python",
+      "NumPy",
+      "pandas",
+      "scikit-learn",
+      "Matplotlib",
+      "Seaborn",
+    ],
+    image: mlAlgorithms,
+    github: "https://github.com/DhamzBonaparte/ML-Algorithms",
+    live: "",
+    isfeatured: true,
   },
   {
     title: "Aakarshan – Canvas Store",
@@ -80,6 +88,16 @@ const projectData = [
     isfeatured: true,
   },
   {
+    title: "Titanic Survival Predictor",
+    description:
+      "A machine learning project built on the Titanic dataset. It combines exploratory data analysis, visualizations, and a logistic regression model to predict passenger survival. Includes saved plots, profiling reports, and a clean pipeline for reproducible results.",
+    tech: ["Python", "Pandas", "Seaborn", "Matplotlib", "Scikit-learn"],
+    image: titanic,
+    github: "https://github.com/DhamzBonaparte/Titanic-EDA-ML",
+    live: null,
+    isfeatured: false,
+  },
+  {
     title: "Expense Tracker",
     description:
       "A sleek application built to help users manage their daily finances effortlessly. It features intuitive expense categorization, real-time balance updates and spending trends. Designed for clarity, accuracy, and smooth user experience.",
@@ -88,25 +106,6 @@ const projectData = [
     github: "https://github.com/DhamzBonaparte/Expense-tracker",
     live: "https://track-expense-now.netlify.app/",
     isfeatured: true,
-  },
-  {
-    title: "Find Receipe",
-    description:
-      "A small project featuring details of different receipes found around the world.",
-    tech: [
-      "JavaScript",
-      "HTML",
-      "SCSS",
-      "Vite",
-      "MUI",
-      "REACT",
-      "Fetch API",
-      "MongoDB",
-    ],
-    image: receipe, // Use valid path or placeholder
-    github: "https://github.com/DhamzBonaparte/Receipe-app",
-    live: "https://find-receipe.netlify.app/",
-    isFeatured: true,
   },
 ];
 

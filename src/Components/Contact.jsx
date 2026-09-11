@@ -28,10 +28,13 @@ const Contact = ({ refe }) => {
           import.meta.env.VITE_EMAILJS_SERVICE_ID,
           import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
           e.target,
-          import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+          import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
         )
         .then(() => {
-          setStatus({ type: "success", text: "Message Sent! Thank you for reaching out." });
+          setStatus({
+            type: "success",
+            text: "Message Sent! Thank you for reaching out.",
+          });
           e.target.reset();
           setFullName("");
           setEmail("");
@@ -41,13 +44,19 @@ const Contact = ({ refe }) => {
           setTimeout(() => setStatus(null), 2000);
         })
         .catch((error) => {
-          setStatus({ type: "error", text: "Oops! Something went wrong while sending." });
+          setStatus({
+            type: "error",
+            text: "Oops! Something went wrong while sending.",
+          });
           console.error("Error sending email:", error.text);
 
           setTimeout(() => setStatus(null), 2000);
         });
     } catch (err) {
-      setStatus({ type: "error", text: "Unexpected error. Please try again later." });
+      setStatus({
+        type: "error",
+        text: "Unexpected error. Please try again later.",
+      });
       console.error("Unexpected error:", err);
 
       setTimeout(() => setStatus(null), 2000);
@@ -74,7 +83,10 @@ const Contact = ({ refe }) => {
             </div>
 
             <div className="social-links">
-              <a className="link-item">
+              <a
+                className="link-item"
+                href="mailto:sulavdhami420@gmail.com?subject=Hello%20Sulav&body=Hi%20Sulav%2C%20I%20wanted%20to%20connect%20regarding..."
+              >
                 <div className="icon-box">
                   <EmailIcon sx={{ fontSize: 20 }} />
                 </div>
@@ -154,8 +166,12 @@ const Contact = ({ refe }) => {
               {/* Status message */}
               {status && (
                 <div className={`status-message ${status.type}`}>
-                  {status.type === "sending" && <HourglassIcon sx={{ mr: 1 }} />}
-                  {status.type === "success" && <CheckCircleIcon sx={{ mr: 1 }} />}
+                  {status.type === "sending" && (
+                    <HourglassIcon sx={{ mr: 1 }} />
+                  )}
+                  {status.type === "success" && (
+                    <CheckCircleIcon sx={{ mr: 1 }} />
+                  )}
                   {status.type === "error" && <ErrorIcon sx={{ mr: 1 }} />}
                   <span>{status.text}</span>
                 </div>
