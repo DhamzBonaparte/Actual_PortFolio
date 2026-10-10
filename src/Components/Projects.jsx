@@ -8,11 +8,13 @@ import multiple from "../assets/multiple.png";
 import expenseTracker from "../assets/exp-track.png";
 // Import image correctly
 import futhub from "../assets/futhub.png";
-import ttt from "../assets/ttt.png";
+import fpl from "../assets/fpl.png";
 import titanic from "../assets/titanic_vert.png";
 import aakarshan from "../assets/aakarshan.png";
 import worldcup from "../assets/worldcup.png";
 import mlAlgorithms from "../assets/ml-algorithms.png";
+import spam from "../assets/spam.png";
+import sleep from "../assets/sleep.png";
 
 const projectData = [
   {
@@ -34,6 +36,37 @@ const projectData = [
     image: futhub,
     github: "https://github.com/DhamzBonaparte/FutHub",
     live: "https://futhub.netlify.app/",
+  },
+  {
+    title: "FPL Top-5 Player Recommender",
+    description:
+      "End-to-end ML pipeline predicting Fantasy Premier League player points from ~30k player-gameweek records. Engineered lagged form features, identified and removed three data leakage sources (verified with a label permutation test, shuffled R² = −0.04), and deployed as an interactive Streamlit app returning top-5 recommendations by budget, position, and gameweek.",
+    tech: ["Python", "XGBoost", "Streamlit", "Pandas", "Joblib"],
+    image: fpl,
+    github:
+      "https://github.com/DhamzBonaparte/Premier-League-FPL-Suggestion-Model",
+    live: "https://premier-league-fpl-suggestion-model-fccybpydfqgkdmufvxm4hy.streamlit.app/",
+    isfeatured: true,
+  },
+  {
+    title: "Spam Email Classifier",
+    description:
+      "Text classification model to detect spam emails, comparing Logistic Regression, Naive Bayes, and Random Forest. Best model achieved 97% accuracy and 100% precision on 5,572 labeled emails. Deployed as an interactive Streamlit app for real-time prediction.",
+    tech: ["Python", "Scikit-learn", "Streamlit", "NLP"],
+    image: spam,
+    github: "https://github.com/DhamzBonaparte/Spam-Classifier",
+    live: "https://spam-classifier-6iwi.onrender.com/",
+    isfeatured: true,
+  },
+  {
+    title: "Screentime & Sleep Quality Predictor",
+    description:
+      "Classification and regression models predicting sleep quality from daily activity, caffeine intake, REM/deep sleep, and related metrics. Served via FastAPI and deployed with a React frontend. Evaluated with R², MAE, MSE (regression) and accuracy, precision, recall (classification).",
+    tech: ["Python", "XGBoost", "Scikit-learn", "FastAPI", "React"],
+    image: sleep,
+    github: "https://github.com/DhamzBonaparte/Screentime-Analyzer",
+    live: "https://screentime-screen-analyzer.vercel.app/",
+    isfeatured: true,
   },
   {
     title: "ML-Algorithms Suite",
@@ -97,16 +130,7 @@ const projectData = [
     live: null,
     isfeatured: false,
   },
-  {
-    title: "Expense Tracker",
-    description:
-      "A sleek application built to help users manage their daily finances effortlessly. It features intuitive expense categorization, real-time balance updates and spending trends. Designed for clarity, accuracy, and smooth user experience.",
-    tech: ["JavaScript", "React", "SCSS", "Material UI", "HTML"],
-    image: expenseTracker,
-    github: "https://github.com/DhamzBonaparte/Expense-tracker",
-    live: "https://track-expense-now.netlify.app/",
-    isfeatured: true,
-  },
+  ,
 ];
 
 const Projects = ({ refe }) => {

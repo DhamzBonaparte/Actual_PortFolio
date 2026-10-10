@@ -36,38 +36,44 @@ export default function Hero({ refe, proRef, contRef }) {
         <div className="hero-content">
           <div className="left" onMouseMove={handleMouseMove}>
             <div className="image-wrapper">
-              <div className="glow-effect" style={{
-                background: `radial-gradient(circle at ${mousePosition.x}% ${mousePosition.y}%, rgba(142, 45, 226, 0.3), rgba(74, 0, 224, 0.1))`
-              }}></div>
+              <div
+                className="glow-effect"
+                style={{
+                  background: `radial-gradient(circle at ${mousePosition.x}% ${mousePosition.y}%, rgba(142, 45, 226, 0.3), rgba(74, 0, 224, 0.1))`,
+                }}
+              ></div>
               <img src={heroPic} alt="Profile_image" className="floating-img" />
             </div>
           </div>
 
           <div className="right">
-            
-            <h1 className={`title ${isVisible ? 'visible' : ''}`}>
+            <h1 className={`title ${isVisible ? "visible" : ""}`}>
               Hi, I'm <span className="gradient-text">Sulav Dhami</span>
               <div className="cursor"></div>
             </h1>
-            
-            <div className={`typing-container ${isVisible ? 'visible' : ''}`}>
+
+            <div className={`typing-container ${isVisible ? "visible" : ""}`}>
               <p className="typing-text">
-                I build <span className="highlight">exceptional</span> digital experiences
+                I build <span className="highlight">end-to-end</span> ML systems
+                and <span className="highlight">full-stack</span> web
+                applications.
               </p>
             </div>
-            
-            <p className={`subtitle ${isVisible ? 'visible' : ''}`}>
-  A <strong>Full Stack Developer</strong> specializing in the{" "}
-  <strong className="mern-stack">MERN stack</strong> and{" "}
-  <strong className="python-stack">Python</strong>, creating efficient, 
-  scalable applications with modern design and robust functionality. 
-  With added expertise in <strong className="ml-stack">Machine Learning</strong>, 
-  I build intelligent systems that leverage data-driven insights to enhance 
-  performance and deliver smarter solutions.
-</p>
 
-            
-            <div className={`button-container ${isVisible ? 'visible' : ''}`}>
+            <p className={`subtitle ${isVisible ? "visible" : ""}`}>
+              A <strong>Computer Application student</strong>,{" "}
+              <strong>Full Stack Developer</strong>, and aspiring{" "}
+              <strong className="ml-stack">Machine Learning Engineer</strong>. I
+              specialize in the{" "}
+              <strong className="mern-stack">MERN stack</strong> and{" "}
+              <strong className="python-stack">Python</strong>, building
+              projects that combine modern web development with data-driven
+              intelligence. From raw data and model training to full-stack
+              deployment, I develop complete solutions that are scalable,
+              practical, and designed to solve real-world challenges.
+            </p>
+
+            <div className={`button-container ${isVisible ? "visible" : ""}`}>
               <button className="btn contact-btn" onClick={goToContacts}>
                 <SendIcon className="btn-icon" />
                 Contact Me

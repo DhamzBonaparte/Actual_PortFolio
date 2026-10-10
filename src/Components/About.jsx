@@ -1,11 +1,19 @@
 import "./About.scss";
 
 export default function About({ refe }) {
-  const traits = ["Passionate", "Disciplined", "Skilled", "Creative"];
+  const traits = [
+    "End-to-end ML",
+    "Python & XGBoost",
+    "Deployed Projects",
+    "Leakage-aware",
+    "MERN stack",
+    "Full stack Web Development",
+  ];
   const stats = [
-    { title: "1+ Years", subtitle: "Coding Experience" },
-    { title: "10+", subtitle: "Projects Completed" },
-    { title: "3", subtitle: "Major Frameworks Mastered" },
+    { title: "2+ Years", subtitle: "Coding Experience" },
+    { title: "7+", subtitle: "Projects Completed" },
+    { title: "4", subtitle: "Deployed ML Projects" },
+    { title: "3", subtitle: "Live Web Apps" },
   ];
   return (
     <>
@@ -16,18 +24,31 @@ export default function About({ refe }) {
         <div className="about-info">
           <div className="about-left">
             <p className="about-text">
-              I am <span className="highlight">Sulav Dhami</span>, a passionate
-              and disciplined developer with a strong foundation in modern
-              technologies. Skilled in crafting efficient solutions and creative
-              designs, I thrive on turning ideas into polished, interactive
-              experiences.
+              I'm <span className="highlight">Sulav Dhami</span>, a Computer
+              Application student at Tribhuvan University passionate about
+              Machine Learning, Python, and Full Stack Development. I build
+              complete software solutions, from raw data collection and feature
+              engineering to model training, evaluation, and deployment as
+              interactive web applications that people can actually use.
             </p>
+
             <p className="about-text">
-              I enjoy building projects that challenge me to grow, blending
-              logic with creativity to deliver work that is both functional and
-              visually engaging. For me, coding is not just about solving
-              problems, it’s about having fun while creating something
-              meaningful.
+              I'm <span className="highlight">Sulav Dhami</span>, a Computer
+              Application student at Tribhuvan University with a passion for
+              Machine Learning, Python, and Full Stack Development. I enjoy
+              building complete products that solve real-world problems, from
+              data-driven intelligent systems to scalable web applications. My
+              projects include an{" "}
+              <span className="highlight">FPL Player Recommender</span>, where I
+              engineered a robust machine learning pipeline and optimized
+              XGBoost using time-series validation techniques,{" "}
+              <span className="highlight">FutHub</span>, a full-stack futsal
+              booking and management platform built with the MERN stack, and{" "}
+              <span className="highlight">Aakarshan</span>, a platform designed
+              to blend creativity and technology through personalized digital
+              experiences. Whether it's training models, designing APIs, or
+              building responsive user interfaces, I focus on creating reliable,
+              scalable, and user-centered solutions from concept to deployment.
             </p>
             <div className="traits-container">
               {traits.map((trait, index) => {

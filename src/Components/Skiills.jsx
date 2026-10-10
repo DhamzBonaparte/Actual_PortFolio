@@ -8,8 +8,26 @@ const Skills = ({ refe }) => {
       items: ["C", "JavaScript", "Python", "HTML5", "CSS3"],
     },
     {
-      category: "Backend",
-      items: ["Node.js", "Express.js", "MongoDB", "JWT Authentication"],
+      category: "Machine Learning",
+      items: [
+        "XGBoost & Scikit-learn",
+        "Regression & Classification",
+        "Feature Engineering (Lagged & Rolling Features)",
+        "Temporal Train/Test Splits",
+        "Data Leakage Detection",
+        "Hyperparameter Tuning (GridSearchCV, TimeSeriesSplit)",
+        "Model Evaluation (MAE, RMSE, R²)",
+      ],
+    },
+    {
+      category: "Backend & Debugging",
+      items: [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "JWT Authentication",
+        "Nodemon",
+      ],
     },
     {
       category: "Frontend & UI",
@@ -22,10 +40,6 @@ const Skills = ({ refe }) => {
       ],
     },
     {
-      category: "Frameworks & Tools",
-      items: ["Git/GitHub", "Postman", "VS Code", "Vercel", "Netlify", "Axios"],
-    },
-    {
       category: "Workflow & Debugging",
       items: [
         "Route consistency",
@@ -36,14 +50,27 @@ const Skills = ({ refe }) => {
       ],
     },
     {
-      category: "Machine Learning",
+      category: "Data",
       items: [
-        "Pandas & NumPy",
-        "Supervised & Unsupervised Learning",
-        "Regression & Classification Models",
-        "Scikit-learn",
-        "Data Preprocessing & Feature Engineering",
-        "Model Evaluation & Cross-validation",
+        "Pandas, NumPy",
+        "EDA & Data Cleaning",
+        "Feature Engineering",
+        "Parquet, Jupyter",
+      ],
+    },
+    {
+      category: "Tools & Deployment",
+      items: [
+        "Git & GitHub",
+        "Streamlit",
+        "FastAPI",
+        "Vercel, Streamlit Cloud",
+        "Hugging Face (model hosting)",
+        "Git/GitHub",
+        "Postman",
+        "VS Code",
+        "Netlify",
+        "Axios",
       ],
     },
   ];
