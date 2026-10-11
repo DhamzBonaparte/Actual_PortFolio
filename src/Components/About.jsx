@@ -13,7 +13,7 @@ export default function About({ refe }) {
     { title: "2+ Years", subtitle: "Coding Experience" },
     { title: "7+", subtitle: "Projects Completed" },
     { title: "4", subtitle: "Deployed ML Projects" },
-    { title: "3", subtitle: "Live Web Apps" },
+    { title: "5", subtitle: "Live Web Apps" },
   ];
   return (
     <>
