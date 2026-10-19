@@ -48,6 +48,16 @@ const projectData = [
     live: "https://premier-league-fpl-suggestion-model-fccybpydfqgkdmufvxm4hy.streamlit.app/",
     isfeatured: true,
   },
+   {
+    title: "Screentime & Sleep Quality Predictor",
+    description:
+      "Classification and regression models predicting sleep quality from daily activity, caffeine intake, REM/deep sleep, and related metrics. Served via FastAPI and deployed with a React frontend. Evaluated with R², MAE, MSE (regression) and accuracy, precision, recall (classification).",
+    tech: ["Python", "XGBoost", "Scikit-learn", "FastAPI", "React"],
+    image: sleep,
+    github: "https://github.com/DhamzBonaparte/Screentime-Analyzer",
+    live: "https://screentime-screen-analyzer.vercel.app/",
+    isfeatured: true,
+  },
   {
     title: "Spam Email Classifier",
     description:
@@ -56,16 +66,6 @@ const projectData = [
     image: spam,
     github: "https://github.com/DhamzBonaparte/Spam-Classifier",
     live: "https://spam-classifier-6iwi.onrender.com/",
-    isfeatured: true,
-  },
-  {
-    title: "Screentime & Sleep Quality Predictor",
-    description:
-      "Classification and regression models predicting sleep quality from daily activity, caffeine intake, REM/deep sleep, and related metrics. Served via FastAPI and deployed with a React frontend. Evaluated with R², MAE, MSE (regression) and accuracy, precision, recall (classification).",
-    tech: ["Python", "XGBoost", "Scikit-learn", "FastAPI", "React"],
-    image: sleep,
-    github: "https://github.com/DhamzBonaparte/Screentime-Analyzer",
-    live: "https://screentime-screen-analyzer.vercel.app/",
     isfeatured: true,
   },
   {
