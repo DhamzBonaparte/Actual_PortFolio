@@ -54,14 +54,14 @@ export default function Hero({ refe, proRef, contRef }) {
 
             <div className={`typing-container ${isVisible ? "visible" : ""}`}>
               <p className="typing-text">
-                I build <span className="highlight">end-to-end</span> ML systems
-                and <span className="highlight">full-stack</span> web
+                I build <span className="highlight">end-to-end</span> ML/DL
+                systems and <span className="highlight">full-stack</span> web
                 applications.
               </p>
             </div>
 
             <p className={`subtitle ${isVisible ? "visible" : ""}`}>
-              A <strong>Computer Application student</strong>,{" "}
+              A <strong>Computer Science student</strong>,{" "}
               <strong>Full Stack Developer</strong>, and aspiring{" "}
               <strong className="ml-stack">Machine Learning Engineer</strong>. I
               specialize in the{" "}

@@ -1,18 +1,18 @@
 import "./About.scss";
 
 export default function About({ refe }) {
-  const traits = [
-    "End-to-end ML",
-    "Python & XGBoost",
-    "Deployed Projects",
-    "Leakage-aware",
-    "MERN stack",
-    "Full stack Web Development",
-  ];
+const traits = [
+  "Deep Learning & CNNs",
+  "End-to-End ML",
+  "Python & TensorFlow",
+  "Deployed AI Apps",
+  "MERN Stack",
+  "Full-Stack Development",
+];
   const stats = [
     { title: "2+ Years", subtitle: "Coding Experience" },
-    { title: "7+", subtitle: "Projects Completed" },
-    { title: "4", subtitle: "Deployed ML Projects" },
+    { title: "9+", subtitle: "Projects Completed" },
+    { title: "4", subtitle: "Deployed ML/DL Projects" },
     { title: "5", subtitle: "Live Web Apps" },
   ];
   return (
@@ -26,29 +26,27 @@ export default function About({ refe }) {
             <p className="about-text">
               I'm <span className="highlight">Sulav Dhami</span>, a Computer
               Application student at Tribhuvan University passionate about
-              Machine Learning, Python, and Full Stack Development. I build
-              complete software solutions, from raw data collection and feature
-              engineering to model training, evaluation, and deployment as
+              Machine Learning, Deep Learning, and Full-Stack Development. I
+              build complete software solutions, from raw data collection and
+              feature engineering to training neural networks and deploying
               interactive web applications that people can actually use.
             </p>
 
             <p className="about-text">
-              I'm <span className="highlight">Sulav Dhami</span>, a Computer
-              Application student at Tribhuvan University with a passion for
-              Machine Learning, Python, and Full Stack Development. I enjoy
-              building complete products that solve real-world problems, from
-              data-driven intelligent systems to scalable web applications. My
-              projects include an{" "}
-              <span className="highlight">FPL Player Recommender</span>, where I
-              engineered a robust machine learning pipeline and optimized
-              XGBoost using time-series validation techniques,{" "}
-              <span className="highlight">FutHub</span>, a full-stack futsal
-              booking and management platform built with the MERN stack, and{" "}
-              <span className="highlight">Aakarshan</span>, a platform designed
-              to blend creativity and technology through personalized digital
-              experiences. Whether it's training models, designing APIs, or
-              building responsive user interfaces, I focus on creating reliable,
-              scalable, and user-centered solutions from concept to deployment.
+              I enjoy building end-to-end products that solve real-world
+              problems. My work includes an{" "}
+              <span className="highlight">FPL Player Recommender</span> where I
+              engineered a leakage-free XGBoost pipeline using time-series
+              validation, and a{" "}
+              <span className="highlight">Multi-Task CNN</span> built from
+              scratch that simultaneously predicts age (regression) and gender
+              (classification) from facial images. Beyond AI, I've built{" "}
+              <span className="highlight">FutHub</span>, a full-stack MERN
+              futsal booking platform, and{" "}
+              <span className="highlight">Aakarshan</span>, a digital canvas
+              store. Whether it's debugging data pipelines, designing APIs, or
+              building responsive UIs, I focus on creating reliable, scalable,
+              and user-centered solutions from concept to deployment.
             </p>
             <div className="traits-container">
               {traits.map((trait, index) => {

@@ -4,8 +4,17 @@ import "./Skills.scss";
 const Skills = ({ refe }) => {
   const skillData = [
     {
-      category: "Languages",
-      items: ["C", "JavaScript", "Python", "HTML5", "CSS3"],
+      category: "Deep Learning",
+      items: [
+        "TensorFlow & Keras",
+        "Artifitial Neural Networks (ANNs)",
+        "Convolutional Neural Networks (CNNs)",
+        "Multi-Task Learning (Regression & Classification)",
+        "Data Augmentation (Flip, Rotation, Zoom)",
+        "Batch Normalization & Dropout",
+        "Transfer Learning",
+        "Model Callbacks (EarlyStopping, ReduceLROnPlateau)",
+      ],
     },
     {
       category: "Machine Learning",
@@ -14,18 +23,24 @@ const Skills = ({ refe }) => {
         "Regression & Classification",
         "Feature Engineering (Lagged & Rolling Features)",
         "Temporal Train/Test Splits",
-        "Data Leakage Detection",
+        "Data Leakage Detection (Permutation Testing)",
         "Hyperparameter Tuning (GridSearchCV, TimeSeriesSplit)",
-        "Model Evaluation (MAE, RMSE, R²)",
+        "Model Evaluation (MAE, RMSE, R², Spearman)",
       ],
     },
     {
-      category: "Backend & Debugging",
+      category: "Languages",
+      items: ["Python", "C", "JavaScript", "HTML5", "CSS3"],
+    },
+    {
+      category: "Backend & APIs",
       items: [
+        "FastAPI",
         "Node.js",
         "Express.js",
         "MongoDB",
         "JWT Authentication",
+        "REST APIs",
         "Nodemon",
       ],
     },
@@ -33,15 +48,26 @@ const Skills = ({ refe }) => {
       category: "Frontend & UI",
       items: [
         "React",
-        "SCSS",
+        "SCSS / CSS3",
         "Responsive Design",
         "SweetAlert2",
         "User-centric workflows",
       ],
     },
     {
+      category: "Data",
+      items: [
+        "Pandas, NumPy",
+        "EDA & Data Cleaning",
+        "Image Processing (Pillow)",
+        "Parquet, Jupyter",
+        "Hugging Face Datasets",
+      ],
+    },
+    {
       category: "Workflow & Debugging",
       items: [
+        "Data Pipeline Debugging (Shape Mismatches)",
         "Route consistency",
         "Middleware integration",
         "Error handling",
@@ -50,26 +76,15 @@ const Skills = ({ refe }) => {
       ],
     },
     {
-      category: "Data",
-      items: [
-        "Pandas, NumPy",
-        "EDA & Data Cleaning",
-        "Feature Engineering",
-        "Parquet, Jupyter",
-      ],
-    },
-    {
       category: "Tools & Deployment",
       items: [
         "Git & GitHub",
         "Streamlit",
-        "FastAPI",
-        "Vercel, Streamlit Cloud",
-        "Hugging Face (model hosting)",
-        "Git/GitHub",
+        "Vercel & Netlify",
+        "Streamlit Cloud & Render",
+        "Hugging Face (Model Hosting)",
         "Postman",
         "VS Code",
-        "Netlify",
         "Axios",
       ],
     },

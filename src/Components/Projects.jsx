@@ -15,6 +15,8 @@ import worldcup from "../assets/worldcup.png";
 import mlAlgorithms from "../assets/ml-algorithms.png";
 import spam from "../assets/spam.png";
 import sleep from "../assets/sleep.png";
+import catsVsDogs from "../assets/dogvcat.png";
+import multitaskAgeGender from "../assets/multitask.png";
 
 const projectData = [
   {
@@ -38,6 +40,24 @@ const projectData = [
     live: "https://futhub.netlify.app/",
   },
   {
+    title: "Multi-Task Face Analysis CNN",
+    description:
+      "A deep learning model built from scratch using the Keras Functional API that simultaneously performs age regression and gender classification on facial images. Features a shared Convolutional base that splits into two distinct output branches, utilizing tf.data pipelines, Data Augmentation, and ReduceLROnPlateau.",
+    tech: [
+      "Python",
+      "TensorFlow",
+      "Keras",
+      "NumPy",
+      "Pandas",
+      "Pillow",
+      "Google Colab",
+    ],
+    image: multitaskAgeGender, // Replace with your actual image variable
+    github: "https://github.com/DhamzBonaparte/Multitask-Face-Analysis-CNN",
+    live: null,
+    isfeatured: true,
+  },
+  {
     title: "FPL Top-5 Player Recommender",
     description:
       "End-to-end ML pipeline predicting Fantasy Premier League player points from ~30k player-gameweek records. Engineered lagged form features, identified and removed three data leakage sources (verified with a label permutation test, shuffled R² = −0.04), and deployed as an interactive Streamlit app returning top-5 recommendations by budget, position, and gameweek.",
@@ -48,7 +68,7 @@ const projectData = [
     live: "https://premier-league-fpl-suggestion-model-fccybpydfqgkdmufvxm4hy.streamlit.app/",
     isfeatured: true,
   },
-   {
+  {
     title: "Screentime & Sleep Quality Predictor",
     description:
       "Classification and regression models predicting sleep quality from daily activity, caffeine intake, REM/deep sleep, and related metrics. Served via FastAPI and deployed with a React frontend. Evaluated with R², MAE, MSE (regression) and accuracy, precision, recall (classification).",
@@ -56,6 +76,25 @@ const projectData = [
     image: sleep,
     github: "https://github.com/DhamzBonaparte/Screentime-Analyzer",
     live: "https://screentime-screen-analyzer.vercel.app/",
+    isfeatured: true,
+  },
+  {
+    title: "Cats vs Dogs CNN Classifier",
+    description:
+      "An image classification model built from scratch to distinguish between cats and dogs by implementing a custom tf.data generator pipeline, Data Augmentation to prevent overfitting, and EarlyStopping/LR scheduling to achieve 90% validation accuracy.",
+    tech: [
+      "Python",
+      "TensorFlow",
+      "Keras",
+      "NumPy",
+      "Pillow",
+      "Hugging Face Datasets",
+      "Google Colab",
+    ],
+    image: catsVsDogs,
+    colab:
+      "https://colab.research.google.com/drive/1YLLqcEtCcir1z1S28PHUsyWG87Sy1OcT",
+    live: null,
     isfeatured: true,
   },
   {
@@ -120,17 +159,6 @@ const projectData = [
       "https://www.kaggle.com/datasets/sulavdhami/worldcup-matches-1930-2022",
     isfeatured: true,
   },
-  {
-    title: "Titanic Survival Predictor",
-    description:
-      "A machine learning project built on the Titanic dataset. It combines exploratory data analysis, visualizations, and a logistic regression model to predict passenger survival. Includes saved plots, profiling reports, and a clean pipeline for reproducible results.",
-    tech: ["Python", "Pandas", "Seaborn", "Matplotlib", "Scikit-learn"],
-    image: titanic,
-    github: "https://github.com/DhamzBonaparte/Titanic-EDA-ML",
-    live: null,
-    isfeatured: false,
-  },
-  ,
 ];
 
 const Projects = ({ refe }) => {
@@ -179,6 +207,7 @@ const Projects = ({ refe }) => {
                   >
                     {project.github && <>GITHUB </>}
                     {project.kaggle && <>KAGGLE </>}
+                    {project.colab && <>GOOGLE COLAB </>}
                     <ArrowForwardIcon
                       style={{ fontSize: "1rem", marginLeft: "4px" }}
                     />
